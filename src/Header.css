@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.alt-header {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #282828, #121212);
+}
+
+.alt-banner {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.alt-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.alt-banner p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  color: #ccc;
+}
+
+.alt-profile {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.alt-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.alt-profile-image .alt-image {
+  border-radius: 50%;
+  border: 5px solid #333;
+  width: 180px;
+  height: 180px;
+}
+
+.alt-profile-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.alt-profile-info li {
+  margin: 8px 0;
+}
+
+.alt-social-icons a {
+  color: #ccc;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.alt-social-icons a:hover {
+  color: #4CAF50;
+}

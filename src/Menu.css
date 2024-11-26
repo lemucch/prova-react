@@ -1,0 +1,88 @@
+/* Estilos do menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-logo h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.menu-links {
+    flex: 1; /* Expande a área do menu-links para toda a largura */
+}
+
+.menu-links ul {
+    display: flex;
+    justify-content: space-around; /* Espaçamento igual entre os itens */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-links ul li {
+    flex: 1; /* Faz com que cada li ocupe espaço igual */
+    text-align: center;
+}
+
+.menu-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-links {
+        display: none; /* Esconde o menu inicialmente */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 8px;
+        width: 150px;
+        z-index: 10;
+    }
+
+    .menu-links.open {
+        display: block; /* Mostra o menu quando isOpen é true */
+    }
+
+    .menu-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o ícone do menu hambúrguer */
+    }
+}
+.menu-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Suaviza a transição da cor */
+}
+
+.menu-links ul li a:hover {
+    color: #007bff; /* Azul */
+}
